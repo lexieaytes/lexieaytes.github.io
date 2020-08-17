@@ -4597,7 +4597,7 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 			width: 55%;
-			background-image: url("/Users/lexieaytes/Documents/lexieaytes.com/images/terminal.jpg");
+			background-image: url("../../images/terminal.jpg ");
 			color: white;
 			font-family: 'Monaco', 'Courier New';
 		}
@@ -4608,7 +4608,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.5s ease-out, -ms-transform 0.5s ease-out;
 			transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 			/* background-color: #383737; */
-			background-image: url("/Users/lexieaytes/Documents/lexieaytes.com/images/terminal.jpg");
+			background-image: url("../../images/terminal.jpg");
 			color: white;
 			border-radius: 4px;
 			position: relative;
