@@ -1,0 +1,19 @@
+[
+  
+  {
+    "title": "HTB Write Up - Bypass",
+    "url": "/blog/posts/BypassWriteUp/",
+    "categories": "HTB, Reversing",
+    "tags": "htb, hack the box, reversing, bypass, windows 10, dnspy",
+    "date": "2020-10-22 13:00:00 -0400",
+    
+
+
+
+
+
+    "snippet": "Technologies: Windows 10, Remnux, VirtualBox, dnSpyWe’re given an executable Bypass.exe to analyse. I always like to start by running the file command to see what we’re dealing with:$ file Bypass.exeBypass.exe: PE32 executable (console) Intel 80386 Mono/.Net assembly, for MS WindowsThis tells us ..."
+  }
+  
+]
+
