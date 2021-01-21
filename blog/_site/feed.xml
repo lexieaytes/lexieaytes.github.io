@@ -1,0 +1,67 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>/</id>
+  <title>Lexie</title>
+  <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
+  <updated>2021-01-21T15:29:50-05:00</updated>
+  <author>
+    <name>Lexie Aytes</name>
+    <uri>/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 Lexie Aytes </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>HTB Write Up - Bypass</title>
+    <link href="/posts/BypassWriteUp/" rel="alternate" type="text/html" title="HTB Write Up - Bypass" />
+    <published>2020-10-22T13:00:00-04:00</published>
+  
+    <updated>2020-10-22T13:00:00-04:00</updated>
+  
+    <id>/posts/BypassWriteUp/</id>
+    <content src="/posts/BypassWriteUp/" />
+    <author>
+      <name>Lexie Aytes</name>
+    </author>
+
+  
+    
+    <category term="HTB" />
+    
+    <category term="Reversing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Technologies: Windows 10, Remnux, VirtualBox, dnSpy
+
+We’re given an executable Bypass.exe to analyse. I always like to start by running the file command to see what we’re dealing with:
+
+$ file Bypass.exe
+Bypass.exe: PE32 executable (console) Intel 80386 Mono/.Net assembly, for MS Windows
+
+
+This tells us that we’re working with a .NET application, and that means we can use a nifty tool called dn...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

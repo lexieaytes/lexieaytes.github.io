@@ -1,0 +1,52 @@
+I"�<p>Technologies: Windows 10, Remnux, VirtualBox, dnSpy</p>
+
+<p>We’re given an executable <code class="language-plaintext highlighter-rouge">Bypass.exe</code> to analyse. I always like to start by running the <code class="language-plaintext highlighter-rouge">file</code> command to see what we’re dealing with:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td> --><td class="rouge-code"><pre><span class="gp">$</span><span class="w"> </span>file Bypass.exe
+<span class="go">Bypass.exe: PE32 executable (console) Intel 80386 Mono/.Net assembly, for MS Windows
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>This tells us that we’re working with a .NET application, and that means we can use a nifty tool called dnSpy to disassemble and debug it.</p>
+
+<p>After opening <code class="language-plaintext highlighter-rouge">Bypass.exe</code> in dnSpy, it shows up in the Assembly Explorer as “HTBChallenge”. Now it’s time to start debugging!</p>
+
+<p>Let’s begin by clicking the green start button at the top.</p>
+
+<p><img src="/assets/img/BypassWriteUp/imageOne.png" alt="image" /></p>
+
+<p>We want to find the file that’s the entry point of the program, so let’s change the ‘Break at’ default to ‘Entry Point’. Click OK. A console running the executable should pop up, and dnSpy should show the entry point in class 0.</p>
+
+<p>Click ‘continue’ a couple more times, and the executable asks for a username and password. Why not try ‘username’ and ‘password’?</p>
+
+<p>Unfortunately, the program responds with <code class="language-plaintext highlighter-rouge">wrong error</code>. Rats.</p>
+
+<p>Let’s add a breakpoint to that first <em>if statement</em> to see what’s going on.</p>
+
+<p><img src="/assets/img/BypassWriteUp/imageTwo.png" alt="image" /></p>
+
+<p>Restart the program in dnSpy by clicking the round arrow at the top. Type in “username” and “password” again, and then the program should hit our breakpoint. Now we can see two variables <strong>flag</strong> and <strong>flag2</strong> listed under <em>locals</em>. Perhaps we should try setting these values to <code class="language-plaintext highlighter-rouge">True</code>…</p>
+
+<p><img src="/assets/img/BypassWriteUp/imageThree.png" alt="image" /></p>
+
+<p>It works! Now the program prompts us for a ‘secret Key’ that we don’t know. Foiled again.</p>
+
+<p>But wait! If we scroll down in the code, we find another <em>if statement</em>. Let’s put another breakpoint there, and then for the ‘secret Key’, type in a random string. I typed ‘key’. Hit enter.</p>
+
+<p>Now in dnSpy, we see:</p>
+
+<p><img src="/assets/img/BypassWriteUp/imageFour.png" alt="image" /></p>
+
+<p>A weird string. Maybe this is the HTB flag?</p>
+
+<p>Nope, it must be something else. Darn.</p>
+
+<p>Maybe we need to change the flag to <code class="language-plaintext highlighter-rouge">True</code> again. Let’s try that and restart the program in dnSpy.</p>
+
+<p>Once we hit our second breakpoint, click the ‘Step into’ button at the top. This will take us into the <em>if statement</em>.</p>
+
+<p>And… presto! We can see the flag in the locals as <strong>str0</strong>, <strong>str1</strong>, and <strong>str2</strong>.
+<img src="/assets/img/BypassWriteUp/imageFive.png" alt="image" /></p>
+
+:ET
