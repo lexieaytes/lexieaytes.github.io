@@ -226,6 +226,7 @@ input, select, textarea {
 		font-style: italic;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
+		font-family: "Barlow";
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -1963,7 +1964,7 @@ input, select, textarea {
 		input[type="button"].primary.accent1,
 		button.primary.accent1,
 		.button.primary.accent1 {
-			background-color: #81c9be !important;
+			background-color: #b2191e !important;
 			color: #ffffff !important;
 		}
 
@@ -4636,31 +4637,31 @@ input, select, textarea {
 		}
 
 		.spotlight.accent1 {
-			background-color: #e8a87c;
+			background-color: #ffffff;
 		}
 
 			.spotlight.accent1 h2 {
-				color: #ffffff;
+				color: #b2191e;
 			}
 
 		.spotlight.accent2 {
-			background-color: #c38d9d;
+			background-color: #ffffff;
 		}
 
 			.spotlight.accent2 h2 {
-				color: #ffffff;
+				color: #b2191e;
 			}
 
 		.spotlight.accent3 {
-			background-color: #e27d5f;
+			background-color: #ffffff;
 		}
 
 			.spotlight.accent3 h2 {
-				color: #ffffff;
+				color: #b2191e;
 			}
 
 		.spotlight.accent4 {
-			background-color: #c38d9d;
+			background-color: #ffffff;
 		}
 
 			.spotlight.accent4 h2 {
@@ -4832,7 +4833,7 @@ input, select, textarea {
 		}
 
 			#header a:active, #header a:hover, #header a:focus {
-				color: #5dbcde;
+				color: #0b131a;
 			}
 
 		#header .logo {
@@ -4845,6 +4846,7 @@ input, select, textarea {
 
 			#header .logo span {
 				font-weight: 400;
+				font-family: "Barlow";
 			}
 
 		#header nav ul {
@@ -4896,9 +4898,9 @@ input, select, textarea {
 
 		#header.alt {
 			/* background-color: transparent; */
-			background-color: #80c8bc;
+			background-color: #ffffff;
 			box-shadow: none;
-			color: #fff;
+			color: #b2191e;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4954,7 +4956,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #7e989c;
+		background: #ffffff;
 		box-shadow: none;
 		height: 100%;
 		max-width: 80%;
@@ -5069,10 +5071,11 @@ input, select, textarea {
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
 						border-top: solid 1px rgba(255, 255, 255, 0.25);
-						color: inherit;
+						color: #0b131a;
 						display: block;
 						line-height: 3.5rem;
 						text-decoration: none;
+						font-family: "Oswald";
 					}
 
 					#menu > ul.links > li > .button {
@@ -5092,7 +5095,7 @@ input, select, textarea {
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 			border: 0;
-			color: #c5d9f9;
+			color: #9F2B68;
 			cursor: pointer;
 			display: block;
 			height: 3.25rem;
@@ -5170,8 +5173,8 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-color: #80c8bc;
-		color: #ffffff;
+		background-color: #ffffff;
+		color: #0b131a;
 		/*background-image: url("../../images/banner.jpg");
 		background-position: center;
 		background-size: cover;
@@ -5196,7 +5199,7 @@ input, select, textarea {
 		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
-			color: #ffffff;
+			color: #b2191e;
 		}
 
 		#banner blockquote {
@@ -5218,8 +5221,9 @@ input, select, textarea {
 		#banner button,
 		#banner .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 3px #ffffff;
-			color: #ffffff;
+			box-shadow: inset 0 0 0 3px #0b131a;
+			color: #b2191e;
+			font-family: "Barlow";
 		}
 
 			#banner input[type="submit"]:hover, #banner input[type="submit"]:focus,
@@ -5332,6 +5336,7 @@ input, select, textarea {
 
 		#banner p {
 			margin-bottom: 2.5rem;
+			font-family: "Oswald";
 		}
 
 		body.is-ie #banner {
@@ -5501,7 +5506,7 @@ input, select, textarea {
 		  }
 		  
 		  .skill {
-			border: 1px solid #50a9d1;
+			border: 1px solid #b2191e;
 			margin-right: 10px;
 			text-transform: uppercase;
 			font-weight: 500;
